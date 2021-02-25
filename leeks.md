@@ -14,11 +14,11 @@ console.log(leeks.colors.blue(leeks.styles.underline('Hello!')));
 console.log(leeks.colours.grey('Hello!'));
 console.log(leeks.colors.gray('Hello!'));
 
-console.log(leeks.eightBit('32', 'hello'));
-console.log(leeks.eightBitBg('32', 'hello'));
+console.log(leeks.eightBit(32, 'hello'));
+console.log(leeks.eightBitBg(32, 'hello'));
 
-console.log(leeks.rgb(['114', '137', '218'], 'hello'));
-console.log(leeks.rgbBg(['114', '137', '218'], 'hello'));
+console.log(leeks.rgb([114, 137, 218], 'hello'));
+console.log(leeks.rgbBg([114, 137, 218], 'hello'));
 
 console.log(leeks.hex('#7289da', 'hello'));
 console.log(leeks.hexBg('#7289da', 'hello'));
@@ -43,10 +43,22 @@ reset
 bold
 dim
 italic
+overline
 underline
 blink
 inverse
 strikethrough
+```
+
+## Remove Styles
+(Might change this later, this removes the style)
+
+```
+nostrikethrough
+nounderline
+nooverline
+noblink
+noinverse
 ```
 
 ## Other
