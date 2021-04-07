@@ -1,8 +1,9 @@
 # leeks.js
+Simple ANSI styling for your terminal.
 
 ## Usage
 ```js
-const leeks = require('./index.js'); // Replace with "leeks.js" if not using from the Git repository
+const leeks = require('../dist/index.js'); // Replace with "leeks.js" if not using from the Git repository
 
 const error = leeks.colors.red;
 console.log(error('Error - There were no leeks!'));
@@ -10,6 +11,8 @@ console.log(error('Error - There were no leeks!'));
 console.log(leeks.colors.red('Hello') + leeks.colors.green(' I like leeks!'));
 console.log(leeks.colors.bgRed('Hello') + leeks.colors.bgGreen(' I like leeks!'));
 console.log(leeks.colors.blue(leeks.styles.underline('Hello!')));
+
+console.log(leeks.styles.underline('Hello'));
 
 console.log(leeks.colours.grey('Hello!'));
 console.log(leeks.colors.gray('Hello!'));
@@ -22,6 +25,20 @@ console.log(leeks.rgbBg([114, 137, 218], 'hello'));
 
 console.log(leeks.hex('#7289da', 'hello'));
 console.log(leeks.hexBg('#7289da', 'hello'));
+
+console.log(leeks.keywords.aqua('Hello'));
+console.log(leeks.bgKeywords.aqua('Hello'));
+
+leeks.disableColours();
+console.log(error('test'));
+
+leeks.enableColours();
+console.log(error('test'));
+
+console.log(leeks.colours.blue`hello there`);
+
+leeks.alias('primary', leeks.colours.green);
+console.log(leeks.colours.primary('hi'));
 ```
 ## Colors
 
@@ -61,6 +78,9 @@ noblink
 noinverse
 ```
 
+## CSS Keywords
+See the [W3C](https://www.w3.org/wiki/CSS/Properties/color/keywords) page
+
 ## Other
 ```
 8bit
@@ -70,4 +90,7 @@ rgbBg
 hex
 hexBg
 supportsColour/supportsColor
+alias
+enableColours/enableColors
+disableColours/enableColors
 ```
