@@ -9,7 +9,7 @@
 * CDN with manga site logos (see note below)
 
 ### Installation
-1. ``git clone https://github.com/davidjcralph/mangapages``
+1. ``git clone https://github.com/davidcralph/mangapages``
 2. ``cd mangapages`` and then ``npm i`` (or ``yarn``)
 3. ``npm start``
 
