@@ -42,8 +42,8 @@ leeks.short('&a&lIam light green and bold&r &cand I am light red');
 leeks.alias('primary', leeks.colours.green);
 console.log(leeks.colours.primary('hi'));
 ```
-## Colors
 
+## Colors
 Default | Background | Bright | Bright Background
 --- | --- | --- | ---
 black | bgBlack | blackBright | bgBlackBright
@@ -70,8 +70,6 @@ strikethrough
 ```
 
 ## Remove Styles
-(Might change this later, this removes the style)
-
 ```
 nostrikethrough
 nounderline
@@ -84,13 +82,11 @@ noinverse
 See the [W3C](https://www.w3.org/wiki/CSS/Properties/color/keywords) page
 
 ## Short codes
-
 ```js
 leeks.short('&3&lHello &2world');
 ```
 
 ### Foreground colours
-
 |Code    |Colour         |
 |:-------|:--------------|
 |`&0`    |`black`        |
@@ -112,7 +108,6 @@ leeks.short('&3&lHello &2world');
 |`&#...` |hex(...)       |
 
 ### Background colours
-
 |Code    |Colour           |
 |:-------|:----------------|
 |`&!0`   |`bgBlack`        |
@@ -134,7 +129,6 @@ leeks.short('&3&lHello &2world');
 |`&!#...`|hexBg(...)       |
 
 ### Styles
-
 |Code    |Style |
 |:-------|:--------------|
 |`&i`	 |`inverse`      |
